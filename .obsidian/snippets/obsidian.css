@@ -1,0 +1,24 @@
+:root {
+    --background: #2D2B55;
+    --foreground: #A599E9;
+    --hover-background: #4D21FC;
+    --contrast: #FAD000;
+    --highlight: #FF7200;
+    --comment: #B362FF;
+    --constants: #FF628C;
+    --other: #9EFFFF;
+    --strings: #A5FF90;
+    --templates: #3AD900;
+    --invalid: #EC3A37F5;
+  }
+
+  .theme-light {
+    --background-primary: var(--background);
+    --background-primary-alt: var(--background);
+    --background-secondary: var(--background);
+    --background-secondary-alt: var(--background);
+    --text-accent: var(--other);
+    --text-accent-hover: var(--constants);
+    --text-normal: var(--foreground);
+    --text-muted: var(--contrast);
+}
