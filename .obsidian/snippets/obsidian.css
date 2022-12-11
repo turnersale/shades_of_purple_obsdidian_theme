@@ -15,7 +15,7 @@
     --test-pink: #ff00ee;
   }
 
-.theme-light {
+.theme-dark {
   --background-primary: var(--dark-purple);
   --background-primary-alt: var(--dark-purple);
   --background-secondary: var(--dark-purple);
@@ -84,10 +84,32 @@
   color: var(--white);
 }
 
+/* Boxes, dropdowns, etc. */
 textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
+  background-color: var(--white);
   color: var(--very-dark-purple);
 }
 
 select, .dropdown {
+  background-color: var(--white);
+  color: var(--very-dark-purple);
+}
+
+button {
+  color: var(--very-dark-purple);
+}
+
+button:not(.clickable-icon) {
+  background-color: var(--white);
+}
+
+button.mod-cta {
+  background-color: var(--bright-purple);
+  color: var(--text-on-accent);
+}
+
+/* For Kanban plugin */
+.kanban-plugin__item-action-add, .kanban-plugin__lane-action-add {
+  background-color: var(--bright-purple);
   color: var(--very-dark-purple);
 }
