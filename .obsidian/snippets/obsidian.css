@@ -1,24 +1,89 @@
 :root {
-    --background: #2D2B55;
-    --foreground: #A599E9;
-    --hover-background: #4D21FC;
-    --contrast: #FAD000;
-    --highlight: #FF7200;
-    --comment: #B362FF;
-    --constants: #FF628C;
-    --other: #9EFFFF;
-    --strings: #A5FF90;
-    --templates: #3AD900;
-    --invalid: #EC3A37F5;
+    --very-dark-purple: #1E1E3F;
+    --dark-purple: #2D2B55;
+    --light-purple: #A599E9;
+    --hover-purple: #4D21FC;
+    --yellow: #FAD000;
+    --orange: #FF7200;
+    --bright-purple: #B362FF;
+    --red: #FF628C;
+    --light-blue: #9EFFFF;
+    --light-green: #A5FF90;
+    --dark-green: #3AD900;
+    --bad-red: #EC3A37F5;
+    --white: #FFFFFF;
+    --test-pink: #ff00ee;
   }
 
-  .theme-light {
-    --background-primary: var(--background);
-    --background-primary-alt: var(--background);
-    --background-secondary: var(--background);
-    --background-secondary-alt: var(--background);
-    --text-accent: var(--other);
-    --text-accent-hover: var(--constants);
-    --text-normal: var(--foreground);
-    --text-muted: var(--contrast);
+.theme-light {
+  --background-primary: var(--dark-purple);
+  --background-primary-alt: var(--dark-purple);
+  --background-secondary: var(--dark-purple);
+  --background-secondary-alt: var(--dark-purple);
+  --text-normal: var(--white);
+  --text-muted: var(--light-purple);
+  --text-accent: var(--light-purple);
+  --text-accent-hover: var(--hover-purple);
+  --text-error: var(--red);
+  --text-error-hover: var(--red);
+  --tab-outline-color: var(--very-dark-purple);
+  --divider-color: var(--very-dark-purple);
+}
+
+/* Side dock icon colors */
+.side-dock-ribbon-tab, .side-dock-ribbon-action {
+    color: var(--light-purple);
+}
+
+/* Tab header defaults and selected tabs */
+.workspace-tab-header {
+  color: var(--light-purple);
+}
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--white);
+}
+
+/* Status bar at the bottom right */
+/* Made things smaller */
+.status-bar {
+  color: var(--white);
+  font-size: 10px;
+  line-height: 10px;
+  max-height: 14px;
+}
+
+.status-bar-item {
+  padding: 2px;
+  line-height: 1;
+}
+
+/* Title items in the settings panel */
+.vertical-tab-header-group-title {
+  color: var(--light-purple);
+}
+
+/* Items in the settings panel */
+.vertical-tab-nav-item {
+  color: var(--white);
+}
+
+/* Selected items in the settings panel */
+.horizontal-tab-nav-item.is-active, .vertical-tab-nav-item.is-active {
+  background-color: var(--light-purple);
+  color: var(--dark-purple);
+}
+
+/* File navbar title color */
+.nav-folder-title-content {
+  color: var(--light-purple);
+}
+
+/* Selected file name in the top of selected tab */
+.is-focused .workspace-leaf.mod-active .view-header-title {
+  color: var(--white);
+}
+
+textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
+  color: var(--very-dark-purple);
 }
